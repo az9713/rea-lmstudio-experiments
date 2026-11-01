@@ -1,0 +1,1 @@
+{"context_length":4096,"echo_load_config":true,"eval_batch_size":512,"flash_attention":true,"model":"synthetic/model"}

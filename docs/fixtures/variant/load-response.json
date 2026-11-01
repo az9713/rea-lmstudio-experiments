@@ -1,0 +1,1 @@
+{"type":"llm","instance_id":"synthetic-instance","status":"loaded","load_time_seconds":0,"load_config":{"context_length":4096,"flash_attention":true,"eval_batch_size":512}}

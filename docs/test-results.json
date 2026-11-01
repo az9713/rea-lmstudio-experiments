@@ -1,0 +1,172 @@
+{
+  "passed": 33,
+  "failed": 0,
+  "results": [
+    {
+      "name": "loopback-only target validation",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "successful real HTTP load/chat workflow and unknown identities",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "stored exact request bytes equal transmitted body",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "API authorization sent but not persisted; error body redacted",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "credentials in experiment payload rejected before network",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "JSON-escaped credential rejected before network",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "credential property names and nested values redacted",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "unstructured error body omitted before persistence",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "server-applied load mismatch preserved and blocks replay",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "guarded replay rechecks live echo and stops before chat",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "missing load echo explicit unknown and blocks replay",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "numerically equal load echo representations match",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "timeout is client-only; backend may finish later",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "cancellation distinct from timeout; incomplete replay blocked",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "HTTP redirects not followed",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "malformed JSON retained as failed run",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "oversize response bounded and fails",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "loaded/response instance mismatch blocks success",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "one requested factor differs; no causal proof",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "multiple requested changes not mislabeled one factor",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "configuration replay allowed with explicit unknown warnings",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "plugin descriptors/tool response committed; automatic replay blocked",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "remote MCP declarations rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "tamper detected: spec.json",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "tamper detected: chat-request.json",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "tamper detected: chat-response.json",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "tamper detected: outcome.json",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "tamper detected: manifest.json",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "independent anchor detects fully rewritten manifest",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "manifest path traversal rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "extra uncommitted entry rejected",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "export verifies copied exact artifacts and refuses overwrite",
+      "passed": true,
+      "error": null
+    },
+    {
+      "name": "artifact reader rejects traversal",
+      "passed": true,
+      "error": null
+    }
+  ],
+  "backend": "Controlled loopback TCP HTTP stub; no LM Studio process/model/ASR/private files accessed"
+}

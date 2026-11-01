@@ -1,0 +1,9 @@
+.tools/
+.runtime/
+**/bin/
+**/obj/
+*.private.json
+handoff.json
+fixtures/run-*/
+releases/*/
+releases/*.zip

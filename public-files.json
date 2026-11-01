@@ -1,0 +1,12 @@
+{"files":[
+ ".gitignore","Directory.Build.props","LICENSE","NOTICE.md","README.md","public-files.json","licenses/DOTNET-LICENSE.txt",
+ "src/Experiments.Core/Experiments.Core.csproj","src/Experiments.Core/Contracts.cs","src/Experiments.Core/Runner.cs","src/Experiments.Core/BundleStore.cs",
+ "src/Experiments.Cli/Experiments.Cli.csproj","src/Experiments.Cli/Program.cs",
+ "src/Experiments.App/Experiments.App.csproj","src/Experiments.App/Program.cs","src/Experiments.App/Workbench.cs",
+ "tests/Experiments.Tests.csproj","tests/StubServer.cs","tests/TestSuite.cs",
+ "scripts/local-env.ps1","scripts/bootstrap.ps1","scripts/build.ps1","scripts/test.ps1","scripts/prepare-showcase.py","scripts/package.ps1","scripts/package.py","scripts/release_privacy.py","scripts/verify_docs.cjs",
+ "docs/index.html","docs/assets/workbench.png","docs/assets/comparison.png","docs/examples.json","docs/test-results.json","docs/validation.json",
+ "docs/fixtures/baseline/spec.json","docs/fixtures/baseline/models-response.json","docs/fixtures/baseline/load-request.json","docs/fixtures/baseline/load-response.json","docs/fixtures/baseline/chat-request.json","docs/fixtures/baseline/chat-response.json","docs/fixtures/baseline/outcome.json","docs/fixtures/baseline/manifest.json","docs/fixtures/baseline/manifest.sha256",
+ "docs/fixtures/variant/spec.json","docs/fixtures/variant/models-response.json","docs/fixtures/variant/load-request.json","docs/fixtures/variant/load-response.json","docs/fixtures/variant/chat-request.json","docs/fixtures/variant/chat-response.json","docs/fixtures/variant/outcome.json","docs/fixtures/variant/manifest.json","docs/fixtures/variant/manifest.sha256",
+ "investigation/findings.md"
+]}

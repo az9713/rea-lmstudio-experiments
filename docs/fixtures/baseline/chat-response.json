@@ -1,0 +1,1 @@
+{"model_instance_id":"synthetic-instance","output":[{"type":"message","content":"SYNTHETIC STUB OUTPUT \u2014 no inference performed"}],"stats":{"input_tokens":12,"total_output_tokens":10,"tokens_per_second":50,"time_to_first_token_seconds":0.01}}

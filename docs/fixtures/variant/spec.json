@@ -1,0 +1,15 @@
+{
+  "endpoint": "http://127.0.0.1:60333/",
+  "modelKey": "synthetic/model",
+  "prompt": "Explain one controlled experiment.",
+  "systemPrompt": "Return a short test response.",
+  "contextLength": 4096,
+  "flashAttention": true,
+  "evalBatchSize": 512,
+  "temperature": 0.4,
+  "topP": 0.95,
+  "maxOutputTokens": 256,
+  "integrationsJson": "[]",
+  "timeoutMilliseconds": 3000,
+  "backendLabel": "controlled loopback stub; no LM Studio inference"
+}

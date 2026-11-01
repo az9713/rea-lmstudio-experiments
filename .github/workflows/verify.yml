@@ -1,0 +1,21 @@
+name: Verify project
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: windows-latest
+    env:
+      DOTNET_GENERATE_ASPNET_CERTIFICATE: 'false'
+      DOTNET_CLI_TELEMETRY_OPTOUT: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Acquire pinned SDK
+        shell: pwsh
+        run: ./scripts/bootstrap.ps1
+      - name: Build native app and CLI
+        shell: pwsh
+        run: ./scripts/build.ps1
+      - name: Verify implementation
+        shell: pwsh
+        run: ./scripts/test.ps1

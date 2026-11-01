@@ -1,0 +1,13 @@
+{
+ "status":"passed within explicitly synthetic-backend scope",
+ "kind":"Independent native Windows API workbench and CLI; no LM Studio patch/runtime/model extraction",
+ "public_api_contract":{"repository":"lmstudio-ai/docs","commit":"8c7159be3ffe364af10aa8ae6f5a7570e9402089","routes":["GET /api/v1/models","POST /api/v1/models/load","POST /api/v1/chat"]},
+ "build":{"sdk":"portable9.0.320","native_gui":"passed0warnings0errors","cli":"passed0warnings0errors","self_contained_win_x64":"GUI+CLI published together with runtime"},
+ "build_path_privacy":{"path_map":"Project build root mapped to virtual /_/","pe_scan":"Actual published PE files scanned for literal project/profile path markers in ASCII/UTF8 and UTF16LE; no matches","debug_symbols":"Excluded from binary ZIP","limits":"No full embedded/compressed-data privacy audit claimed"},
+ "http_integrity_tests":{"passed":33,"failed":0,"details":"test-results.json","backend":"Owned ephemeral-port loopback TCP HTTP stub; real HttpClient interactions"},
+ "native_render":{"run_settings_and_load_echo":"assets/workbench.png","one_factor_comparison":"assets/comparison.png","actual_windows_forms":true,"inputs":"synthetic only; empty token field and sanitized output-folder label"},
+ "fixtures":{"runs":2,"source":"Native app self-test plus production CLI compare/guard","details":"examples.json","payloads_per_run":7,"real_inference":false,"statistics":"synthetic; not benchmarks"},
+ "browser":{"passed":true,"checks":["production fixture selection","three load echo checks","one-factor comparison","both exact manifest hashes and14payload commitments","unknown/replay warnings","screenshot toggle","desktop1440render","mobile390nooverflow","zero page errors"]},
+ "network_testing":{"installed_server_probed":false,"existing_port1234_contacted":false,"model_or_private_app_files_read":false,"real_tools_executed":false,"redirects_proxies_cookies":"disabled by client","client_timeout_backend_continued":"explicitly tested"},
+ "limits":["Real LM Studio/installed-build parity not established","No inference quality/GPU benchmark/tool execution test","Model-file fingerprint and engine build unknown","Complete applied sampler config unknown","Tool schemas/code hashes unknown","One requested-field diff is not causal proof","Configuration replay is not identical-output replay","Adjacent checksums are not authentication","Unknown/encoded secrets cannot all be automatically identified","Linked ancestors/concurrent mutation/hostile local processes outside protection","Windows compatibility tested only on build machine"]
+}

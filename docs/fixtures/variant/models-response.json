@@ -1,0 +1,1 @@
+{"models":[{"type":"llm","key":"synthetic/model","publisher":"controlled-stub","format":"gguf","size_bytes":0,"quantization":{"name":"synthetic","bits_per_weight":4},"loaded_instances":[]}]}

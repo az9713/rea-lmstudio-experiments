@@ -1,0 +1,109 @@
+{
+  "state": "completed",
+  "detail": "Documented HTTP workflow completed. No model/runtime parity or deterministic-output claim.",
+  "backendCompletionUnknown": false,
+  "identity": {
+    "requestedModelKey": "synthetic/model",
+    "loadedInstance": "synthetic-instance",
+    "responseInstance": "synthetic-instance",
+    "modelFileSha256": "unknown \u2014 no model-file digest established",
+    "runtimeEngineVersion": "unknown \u2014 no engine build established",
+    "toolDefinitionAndCodeSha256": "unknown \u2014 integration descriptors do not pin tool schemas or code",
+    "source": "API identifiers/metadata only; no installed model or private app file was read"
+  },
+  "loadChecks": [
+    {
+      "key": "context_length",
+      "requested": "4096",
+      "applied": "4096",
+      "verdict": "match"
+    },
+    {
+      "key": "flash_attention",
+      "requested": "true",
+      "applied": "true",
+      "verdict": "match"
+    },
+    {
+      "key": "eval_batch_size",
+      "requested": "512",
+      "applied": "512",
+      "verdict": "match"
+    }
+  ],
+  "appliedInferenceConfiguration": "unknown \u2014 native chat does not echo a complete applied sampler/runtime configuration",
+  "events": [
+    {
+      "time": "2026-11-01T05:24:58.2224815+00:00",
+      "stage": "run",
+      "state": "validated",
+      "detail": "Loopback-only endpoint; no automatic redirects/proxy. Backend identity remains unverified."
+    },
+    {
+      "time": "2026-11-01T05:24:58.2224848+00:00",
+      "stage": "models",
+      "state": "request-start",
+      "detail": "GET api/v1/models; Authorization header intentionally omitted from records."
+    },
+    {
+      "time": "2026-11-01T05:24:58.2237984+00:00",
+      "stage": "models",
+      "state": "headers-received",
+      "detail": "HTTP 200"
+    },
+    {
+      "time": "2026-11-01T05:24:58.2240103+00:00",
+      "stage": "models",
+      "state": "response-recorded",
+      "detail": "Exact response bytes recorded."
+    },
+    {
+      "time": "2026-11-01T05:24:58.2240407+00:00",
+      "stage": "load",
+      "state": "request-start",
+      "detail": "POST api/v1/models/load; Authorization header intentionally omitted from records."
+    },
+    {
+      "time": "2026-11-01T05:24:58.2268779+00:00",
+      "stage": "load",
+      "state": "headers-received",
+      "detail": "HTTP 200"
+    },
+    {
+      "time": "2026-11-01T05:24:58.227062+00:00",
+      "stage": "load",
+      "state": "response-recorded",
+      "detail": "Exact response bytes recorded."
+    },
+    {
+      "time": "2026-11-01T05:24:58.2270899+00:00",
+      "stage": "load",
+      "state": "applied-settings-recorded",
+      "detail": "Echo is a server claim, not measured hardware/model identity."
+    },
+    {
+      "time": "2026-11-01T05:24:58.227096+00:00",
+      "stage": "chat",
+      "state": "request-start",
+      "detail": "POST api/v1/chat; Authorization header intentionally omitted from records."
+    },
+    {
+      "time": "2026-11-01T05:24:58.229661+00:00",
+      "stage": "chat",
+      "state": "headers-received",
+      "detail": "HTTP 200"
+    },
+    {
+      "time": "2026-11-01T05:24:58.2298977+00:00",
+      "stage": "chat",
+      "state": "response-recorded",
+      "detail": "Exact response bytes recorded."
+    },
+    {
+      "time": "2026-11-01T05:24:58.229913+00:00",
+      "stage": "run",
+      "state": "completed",
+      "detail": "Documented HTTP workflow completed. No model/runtime parity or deterministic-output claim."
+    }
+  ]
+}

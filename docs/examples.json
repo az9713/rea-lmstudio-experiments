@@ -1,0 +1,420 @@
+{
+  "backend": "controlled loopback stub; no inference",
+  "runs": [
+    {
+      "label": "baseline",
+      "spec": {
+        "endpoint": "http://127.0.0.1:60333/",
+        "modelKey": "synthetic/model",
+        "prompt": "Explain one controlled experiment.",
+        "systemPrompt": "Return a short test response.",
+        "contextLength": 4096,
+        "flashAttention": true,
+        "evalBatchSize": 512,
+        "temperature": 0.2,
+        "topP": 0.95,
+        "maxOutputTokens": 256,
+        "integrationsJson": "[]",
+        "timeoutMilliseconds": 3000,
+        "backendLabel": "controlled loopback stub; no LM Studio inference"
+      },
+      "outcome": {
+        "state": "completed",
+        "detail": "Documented HTTP workflow completed. No model/runtime parity or deterministic-output claim.",
+        "backendCompletionUnknown": false,
+        "identity": {
+          "requestedModelKey": "synthetic/model",
+          "loadedInstance": "synthetic-instance",
+          "responseInstance": "synthetic-instance",
+          "modelFileSha256": "unknown \u2014 no model-file digest established",
+          "runtimeEngineVersion": "unknown \u2014 no engine build established",
+          "toolDefinitionAndCodeSha256": "unknown \u2014 integration descriptors do not pin tool schemas or code",
+          "source": "API identifiers/metadata only; no installed model or private app file was read"
+        },
+        "loadChecks": [
+          {
+            "key": "context_length",
+            "requested": "4096",
+            "applied": "4096",
+            "verdict": "match"
+          },
+          {
+            "key": "flash_attention",
+            "requested": "true",
+            "applied": "true",
+            "verdict": "match"
+          },
+          {
+            "key": "eval_batch_size",
+            "requested": "512",
+            "applied": "512",
+            "verdict": "match"
+          }
+        ],
+        "appliedInferenceConfiguration": "unknown \u2014 native chat does not echo a complete applied sampler/runtime configuration",
+        "events": [
+          {
+            "time": "2026-11-01T05:24:58.2224815+00:00",
+            "stage": "run",
+            "state": "validated",
+            "detail": "Loopback-only endpoint; no automatic redirects/proxy. Backend identity remains unverified."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2224848+00:00",
+            "stage": "models",
+            "state": "request-start",
+            "detail": "GET api/v1/models; Authorization header intentionally omitted from records."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2237984+00:00",
+            "stage": "models",
+            "state": "headers-received",
+            "detail": "HTTP 200"
+          },
+          {
+            "time": "2026-11-01T05:24:58.2240103+00:00",
+            "stage": "models",
+            "state": "response-recorded",
+            "detail": "Exact response bytes recorded."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2240407+00:00",
+            "stage": "load",
+            "state": "request-start",
+            "detail": "POST api/v1/models/load; Authorization header intentionally omitted from records."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2268779+00:00",
+            "stage": "load",
+            "state": "headers-received",
+            "detail": "HTTP 200"
+          },
+          {
+            "time": "2026-11-01T05:24:58.227062+00:00",
+            "stage": "load",
+            "state": "response-recorded",
+            "detail": "Exact response bytes recorded."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2270899+00:00",
+            "stage": "load",
+            "state": "applied-settings-recorded",
+            "detail": "Echo is a server claim, not measured hardware/model identity."
+          },
+          {
+            "time": "2026-11-01T05:24:58.227096+00:00",
+            "stage": "chat",
+            "state": "request-start",
+            "detail": "POST api/v1/chat; Authorization header intentionally omitted from records."
+          },
+          {
+            "time": "2026-11-01T05:24:58.229661+00:00",
+            "stage": "chat",
+            "state": "headers-received",
+            "detail": "HTTP 200"
+          },
+          {
+            "time": "2026-11-01T05:24:58.2298977+00:00",
+            "stage": "chat",
+            "state": "response-recorded",
+            "detail": "Exact response bytes recorded."
+          },
+          {
+            "time": "2026-11-01T05:24:58.229913+00:00",
+            "stage": "run",
+            "state": "completed",
+            "detail": "Documented HTTP workflow completed. No model/runtime parity or deterministic-output claim."
+          }
+        ]
+      },
+      "manifest": {
+        "schema": "lm-experiment/1",
+        "id": "ecf8ce1b94c84dbc890468d6e058b7d4",
+        "createdUtc": "2026-11-01T05:24:58.2424799+00:00",
+        "producer": "LM Experiment Workbench0.1",
+        "artifacts": [
+          {
+            "name": "chat-request.json",
+            "bytes": 225,
+            "sha256": "54ee0f2b30766a0b3fd73425908f01ea292c4786912ebc5ef26982e5f5d850f5",
+            "representation": "exact-request-body; credential header omitted"
+          },
+          {
+            "name": "chat-response.json",
+            "bytes": 247,
+            "sha256": "3387dd143b4a367bcaa404d711775414dda72e2f4e6e30aa1482dbf221356325",
+            "representation": "exact-response-body"
+          },
+          {
+            "name": "load-request.json",
+            "bytes": 118,
+            "sha256": "c946d6d3dcf5c898400bd504224fec12b11a018a294c77cbffe7ecfb7ef58cbe",
+            "representation": "exact-request-body; credential header omitted"
+          },
+          {
+            "name": "load-response.json",
+            "bytes": 172,
+            "sha256": "f0db318181052f8b639b5acea3e9ba3ffc2f597e8ac56e688e2eabd5c1a057be",
+            "representation": "exact-response-body"
+          },
+          {
+            "name": "models-response.json",
+            "bytes": 190,
+            "sha256": "6f45914a8c364610f530b393d2f9ca25ee6b68c92d3057d89cc78ab7b9b0f096",
+            "representation": "exact-response-body"
+          },
+          {
+            "name": "outcome.json",
+            "bytes": 3581,
+            "sha256": "97fb7bb9c042b55e5b273713660222ffe8d55246bc02a9d35b31d17adf6ec120",
+            "representation": "derived lifecycle/configuration/identity record"
+          },
+          {
+            "name": "spec.json",
+            "bytes": 459,
+            "sha256": "6cb117eaa8cccd75f8d5f5376445730951a27bb854cc298db5f030ee77d05a51",
+            "representation": "requested-experiment"
+          }
+        ]
+      },
+      "chat": {
+        "model_instance_id": "synthetic-instance",
+        "output": [
+          {
+            "type": "message",
+            "content": "SYNTHETIC STUB OUTPUT \u2014 no inference performed"
+          }
+        ],
+        "stats": {
+          "input_tokens": 12,
+          "total_output_tokens": 10,
+          "tokens_per_second": 50,
+          "time_to_first_token_seconds": 0.01
+        }
+      },
+      "guard": {
+        "configurationReplayAllowed": true,
+        "blockers": [],
+        "warnings": [
+          "Configuration replay only, not identical-output replay.",
+          "Model-file SHA256 and runtime-engine version remain unknown through this API contract.",
+          "Fresh load/chat can change backend state; sampling and hardware determinism are not established."
+        ]
+      }
+    },
+    {
+      "label": "variant",
+      "spec": {
+        "endpoint": "http://127.0.0.1:60333/",
+        "modelKey": "synthetic/model",
+        "prompt": "Explain one controlled experiment.",
+        "systemPrompt": "Return a short test response.",
+        "contextLength": 4096,
+        "flashAttention": true,
+        "evalBatchSize": 512,
+        "temperature": 0.4,
+        "topP": 0.95,
+        "maxOutputTokens": 256,
+        "integrationsJson": "[]",
+        "timeoutMilliseconds": 3000,
+        "backendLabel": "controlled loopback stub; no LM Studio inference"
+      },
+      "outcome": {
+        "state": "completed",
+        "detail": "Documented HTTP workflow completed. No model/runtime parity or deterministic-output claim.",
+        "backendCompletionUnknown": false,
+        "identity": {
+          "requestedModelKey": "synthetic/model",
+          "loadedInstance": "synthetic-instance",
+          "responseInstance": "synthetic-instance",
+          "modelFileSha256": "unknown \u2014 no model-file digest established",
+          "runtimeEngineVersion": "unknown \u2014 no engine build established",
+          "toolDefinitionAndCodeSha256": "unknown \u2014 integration descriptors do not pin tool schemas or code",
+          "source": "API identifiers/metadata only; no installed model or private app file was read"
+        },
+        "loadChecks": [
+          {
+            "key": "context_length",
+            "requested": "4096",
+            "applied": "4096",
+            "verdict": "match"
+          },
+          {
+            "key": "flash_attention",
+            "requested": "true",
+            "applied": "true",
+            "verdict": "match"
+          },
+          {
+            "key": "eval_batch_size",
+            "requested": "512",
+            "applied": "512",
+            "verdict": "match"
+          }
+        ],
+        "appliedInferenceConfiguration": "unknown \u2014 native chat does not echo a complete applied sampler/runtime configuration",
+        "events": [
+          {
+            "time": "2026-11-01T05:24:58.2464271+00:00",
+            "stage": "run",
+            "state": "validated",
+            "detail": "Loopback-only endpoint; no automatic redirects/proxy. Backend identity remains unverified."
+          },
+          {
+            "time": "2026-11-01T05:24:58.24643+00:00",
+            "stage": "models",
+            "state": "request-start",
+            "detail": "GET api/v1/models; Authorization header intentionally omitted from records."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2476266+00:00",
+            "stage": "models",
+            "state": "headers-received",
+            "detail": "HTTP 200"
+          },
+          {
+            "time": "2026-11-01T05:24:58.2478126+00:00",
+            "stage": "models",
+            "state": "response-recorded",
+            "detail": "Exact response bytes recorded."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2478389+00:00",
+            "stage": "load",
+            "state": "request-start",
+            "detail": "POST api/v1/models/load; Authorization header intentionally omitted from records."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2495368+00:00",
+            "stage": "load",
+            "state": "headers-received",
+            "detail": "HTTP 200"
+          },
+          {
+            "time": "2026-11-01T05:24:58.2497024+00:00",
+            "stage": "load",
+            "state": "response-recorded",
+            "detail": "Exact response bytes recorded."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2497305+00:00",
+            "stage": "load",
+            "state": "applied-settings-recorded",
+            "detail": "Echo is a server claim, not measured hardware/model identity."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2497377+00:00",
+            "stage": "chat",
+            "state": "request-start",
+            "detail": "POST api/v1/chat; Authorization header intentionally omitted from records."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2509563+00:00",
+            "stage": "chat",
+            "state": "headers-received",
+            "detail": "HTTP 200"
+          },
+          {
+            "time": "2026-11-01T05:24:58.2511408+00:00",
+            "stage": "chat",
+            "state": "response-recorded",
+            "detail": "Exact response bytes recorded."
+          },
+          {
+            "time": "2026-11-01T05:24:58.2511559+00:00",
+            "stage": "run",
+            "state": "completed",
+            "detail": "Documented HTTP workflow completed. No model/runtime parity or deterministic-output claim."
+          }
+        ]
+      },
+      "manifest": {
+        "schema": "lm-experiment/1",
+        "id": "0361f3d03bf6472a9b9e671d294a5470",
+        "createdUtc": "2026-11-01T05:24:58.2686267+00:00",
+        "producer": "LM Experiment Workbench0.1",
+        "artifacts": [
+          {
+            "name": "chat-request.json",
+            "bytes": 225,
+            "sha256": "1af1653ef173b9346333bf35d4b13354eafefb800f094037331715e033228e4b",
+            "representation": "exact-request-body; credential header omitted"
+          },
+          {
+            "name": "chat-response.json",
+            "bytes": 247,
+            "sha256": "3387dd143b4a367bcaa404d711775414dda72e2f4e6e30aa1482dbf221356325",
+            "representation": "exact-response-body"
+          },
+          {
+            "name": "load-request.json",
+            "bytes": 118,
+            "sha256": "c946d6d3dcf5c898400bd504224fec12b11a018a294c77cbffe7ecfb7ef58cbe",
+            "representation": "exact-request-body; credential header omitted"
+          },
+          {
+            "name": "load-response.json",
+            "bytes": 172,
+            "sha256": "f0db318181052f8b639b5acea3e9ba3ffc2f597e8ac56e688e2eabd5c1a057be",
+            "representation": "exact-response-body"
+          },
+          {
+            "name": "models-response.json",
+            "bytes": 190,
+            "sha256": "6f45914a8c364610f530b393d2f9ca25ee6b68c92d3057d89cc78ab7b9b0f096",
+            "representation": "exact-response-body"
+          },
+          {
+            "name": "outcome.json",
+            "bytes": 3583,
+            "sha256": "8a4eb347e1c2ac4c15464454cccb19e5b8bf7f935f8454a13023c95660fed8ae",
+            "representation": "derived lifecycle/configuration/identity record"
+          },
+          {
+            "name": "spec.json",
+            "bytes": 459,
+            "sha256": "b3b4c3e6732544d8c0f32e752abdfda62875f7039adec3d87df3d78da0bf2240",
+            "representation": "requested-experiment"
+          }
+        ]
+      },
+      "chat": {
+        "model_instance_id": "synthetic-instance",
+        "output": [
+          {
+            "type": "message",
+            "content": "SYNTHETIC STUB OUTPUT \u2014 no inference performed"
+          }
+        ],
+        "stats": {
+          "input_tokens": 12,
+          "total_output_tokens": 10,
+          "tokens_per_second": 50,
+          "time_to_first_token_seconds": 0.01
+        }
+      },
+      "guard": {
+        "configurationReplayAllowed": true,
+        "blockers": [],
+        "warnings": [
+          "Configuration replay only, not identical-output replay.",
+          "Model-file SHA256 and runtime-engine version remain unknown through this API contract.",
+          "Fresh load/chat can change backend state; sampling and hardware determinism are not established."
+        ]
+      }
+    }
+  ],
+  "comparison": {
+    "valid": true,
+    "exactlyOneRequestedFactorChanged": true,
+    "requestedChanges": [
+      {
+        "path": "temperature",
+        "before": "0.2",
+        "after": "0.4"
+      }
+    ],
+    "observedDifferences": [],
+    "causalAttribution": "Requested-factor accounting only. Unknown file/runtime identities, backend state, stochastic inference and uncontrolled factors prevent causal/reproducibility proof."
+  }
+}

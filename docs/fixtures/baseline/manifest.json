@@ -1,0 +1,50 @@
+{
+  "schema": "lm-experiment/1",
+  "id": "ecf8ce1b94c84dbc890468d6e058b7d4",
+  "createdUtc": "2026-11-01T05:24:58.2424799+00:00",
+  "producer": "LM Experiment Workbench0.1",
+  "artifacts": [
+    {
+      "name": "chat-request.json",
+      "bytes": 225,
+      "sha256": "54ee0f2b30766a0b3fd73425908f01ea292c4786912ebc5ef26982e5f5d850f5",
+      "representation": "exact-request-body; credential header omitted"
+    },
+    {
+      "name": "chat-response.json",
+      "bytes": 247,
+      "sha256": "3387dd143b4a367bcaa404d711775414dda72e2f4e6e30aa1482dbf221356325",
+      "representation": "exact-response-body"
+    },
+    {
+      "name": "load-request.json",
+      "bytes": 118,
+      "sha256": "c946d6d3dcf5c898400bd504224fec12b11a018a294c77cbffe7ecfb7ef58cbe",
+      "representation": "exact-request-body; credential header omitted"
+    },
+    {
+      "name": "load-response.json",
+      "bytes": 172,
+      "sha256": "f0db318181052f8b639b5acea3e9ba3ffc2f597e8ac56e688e2eabd5c1a057be",
+      "representation": "exact-response-body"
+    },
+    {
+      "name": "models-response.json",
+      "bytes": 190,
+      "sha256": "6f45914a8c364610f530b393d2f9ca25ee6b68c92d3057d89cc78ab7b9b0f096",
+      "representation": "exact-response-body"
+    },
+    {
+      "name": "outcome.json",
+      "bytes": 3581,
+      "sha256": "97fb7bb9c042b55e5b273713660222ffe8d55246bc02a9d35b31d17adf6ec120",
+      "representation": "derived lifecycle/configuration/identity record"
+    },
+    {
+      "name": "spec.json",
+      "bytes": 459,
+      "sha256": "6cb117eaa8cccd75f8d5f5376445730951a27bb854cc298db5f030ee77d05a51",
+      "representation": "requested-experiment"
+    }
+  ]
+}
