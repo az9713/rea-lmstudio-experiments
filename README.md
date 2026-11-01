@@ -1,14 +1,19 @@
 # LM Experiment Workbench
 
-**Requested settings, server-reported settings, and unknowns belong in different fields.**
+Save what you asked a local AI server to do, what it reported back, and what it did not tell you. Compare two runs without confusing the settings you requested with the settings the server actually confirmed.
 
-An independent native Windows application and CLI that turns a documented LM Studio local-API workflow into an inspectable, immutable experiment bundle. It records exact sent JSON bodies, server load-setting echoes, lifecycle events, model identifiers, response/tool payloads, and SHA-256 commitments. It compares requested factors and guards configuration replay without claiming identical outputs.
+You change a response setting and get a better answer. Later you want to repeat it, but cannot remember the complete request or whether the same model settings were actually loaded. A screenshot of a settings panel leaves many of those questions unanswered.
 
-[Live showcase](https://az9713.github.io/rea-lmstudio-experiments/) · [Windows releases](https://github.com/az9713/rea-lmstudio-experiments/releases) · [Validation](docs/validation.json) · [Investigation](investigation/findings.md)
+**Example:** The saved examples change one requested response setting, temperature, which controls sampling randomness. The comparison shows that requested difference separately from the replies. It also leaves missing model or runtime details marked unknown, rather than claiming that the setting alone caused the different answer.
+
+**What you install:** A separate Windows app designed to connect to LM Studio running on your computer.
+
+**Current scope:** The Windows app was tested with a program pretending to be an LM Studio server. A real LM Studio model run has not been verified. No model is bundled, and the results shown here are not a speed or answer-quality benchmark.
+
+[Live guide](https://az9713.github.io/rea-lmstudio-experiments/) · [Download packages](https://github.com/az9713/rea-lmstudio-experiments/releases/tag/v0.1.0)
 
 ![Actual native workbench using an owned synthetic HTTP server](docs/assets/workbench.png)
 
-**Validation used a controlled loopback HTTP stub, not LM Studio inference.** No installed LM Studio process, model file, private configuration or existing localhost server was inspected. This app is original API-client software, not a modified LM Studio binary or an extracted runtime/model. An actual LM Studio backend must be independently installed and started by the user.
 
 ## Use the Windows app
 
