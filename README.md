@@ -12,6 +12,18 @@ You change a response setting and get a better answer. Later you want to repeat 
 
 [Live guide](https://az9713.github.io/rea-lmstudio-experiments/) · [Download packages](https://github.com/az9713/rea-lmstudio-experiments/releases/tag/v0.1.0)
 
+<!-- rea-release-expectations:start -->
+## What to expect from this release
+
+**Status: experimental.** Read the tested scope and remaining work below before choosing this release for your workflow.
+
+- **What you get:** A standalone Windows client designed to call LM Studio's local server. Run records, comparison and replay controls live in this client, outside LM Studio's own interface.
+- **Verified so far:** Real HTTP requests to a controlled simulated server, response recording, configuration checks, comparison, replay guards and native/browser interfaces were tested.
+- **Still needs testing or implementation:** A real LM Studio server/model run and its reported settings still need end-to-end verification. The examples establish no model speed, answer quality or repeatability benchmark.
+- **Relationship to the original app:** Installing it does not alter LM Studio or install a model. The intended connection is through the local server API; placing these features inside LM Studio would require a separate interface integration.
+
+<!-- rea-release-expectations:end -->
+
 ![Actual native workbench using an owned synthetic HTTP server](docs/assets/workbench.png)
 
 
